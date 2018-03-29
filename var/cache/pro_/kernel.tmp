@@ -1,0 +1,50 @@
+<?php
+
+namespace 
+{
+    class AppKerne_ extends AppKernel
+    {
+        public function getCacheDir()
+        {
+            return '/Applications/XAMPP/xamppfiles/htdocs/DSS/var/cache/pro_';
+        }
+
+        public function getRootDir()
+        {
+            return '/Applications/XAMPP/xamppfiles/htdocs/DSS/app';
+        }
+
+                public function getProjectDir()
+        {
+            return '/Applications/XAMPP/xamppfiles/htdocs/DSS';
+        }
+        
+        public function getLogDir()
+        {
+            return '/Applications/XAMPP/xamppfiles/htdocs/DSS/var/logs';
+        }
+
+        protected function getContainerClass()
+        {
+            return 'appProdProjectContaine_';
+        }
+
+        protected function buildContainer()
+        {
+            $container = parent::buildContainer();
+
+            // filter container's resources, removing reference to temp kernel file
+            $resources = $container->getResources();
+            $filteredResources = array();
+            foreach ($resources as $resource) {
+                if ((string) $resource !== __FILE__) {
+                    $filteredResources[] = $resource;
+                }
+            }
+
+            $container->setResources($filteredResources);
+
+            return $container;
+        }
+    }
+}

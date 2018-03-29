@@ -1,0 +1,86 @@
+{
+  "name": "user/crawler",
+  "license": "proprietary",
+  "type": "project",
+  "autoload": {
+    "psr-4": {
+      "": "src/",
+      "Tests\\": "tests/"
+    },
+    "classmap": [
+      "app/AppKernel.php",
+      "app/AppCache.php"
+    ]
+  },
+  "require": {
+    "php": "^7.0",
+    "alcaeus/mongo-php-adapter": "^1.1.2",
+    "symfony/symfony": "3.3.*",
+    "doctrine/orm": "^2.5",
+    "doctrine/doctrine-bundle": "~1.6",
+    "symfony/assetic-bundle": "^2.8",
+    "symfony/swiftmailer-bundle": "^3.0",
+    "symfony/monolog-bundle": "~2.4",
+    "sensio/distribution-bundle": "^5.0",
+    "sensio/framework-extra-bundle": "^3.0.2",
+    "guzzlehttp/guzzle": "^6.1",
+    "symfony/css-selector": "^3.0",
+    "symfony/dom-crawler": "^3.0",
+    "doctrine/mongodb-odm": "~1.1.6",
+    "doctrine/mongodb-odm-bundle": "^3.0",
+    "friendsofsymfony/user-bundle": "~2.0",
+    "ismaambrosi/generator-bundle": "^2.5",
+    "knplabs/knp-paginator-bundle": "^2.5",
+    "stof/doctrine-extensions-bundle": "^1.2",
+    "vich/uploader-bundle": "^1.3",
+    "liip/imagine-bundle": "^1.7",
+    "egeloen/ckeditor-bundle": "^6.0",
+    "gedmo/doctrine-extensions": "^2.4",
+    "sentry/sentry-symfony": "^1.0",
+    "facebook/graph-sdk": "^5.6",
+    "gaufrette/aws-s3-adapter": "^0.4.0",
+    "knplabs/knp-gaufrette-bundle": "~0.5",
+    "aws/aws-sdk-php": "~3.0",
+    "khr/react-curl": "^2.0",
+    "cubetools/react-settle-promise": "^0.1.0",
+    "clue/block-react": "1.2"
+  },
+  "require-dev": {
+    "sensio/generator-bundle": "^3.0",
+    "doctrine/doctrine-fixtures-bundle": "^2.3",
+    "liip/functional-test-bundle": "^1.8",
+    "symfony/phpunit-bridge": "^3.3",
+    "phpunit/phpunit": "^5.7"
+  },
+  "scripts": {
+    "post-install-cmd": [
+      "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
+      "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
+      "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
+      "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile",
+      "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::prepareDeploymentTarget"
+    ],
+    "post-update-cmd": [
+      "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
+      "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
+      "Ivory\\CKEditorBundle\\Composer\\CKEditorScriptHandler::install",
+      "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
+      "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile",
+      "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::prepareDeploymentTarget"
+    ]
+  },
+  "config": {
+    "bin-dir": "bin"
+  },
+  "extra": {
+    "symfony-app-dir": "app",
+    "symfony-bin-dir": "bin",
+    "symfony-var-dir": "var",
+    "symfony-web-dir": "web",
+    "symfony-tests-dir": "tests",
+    "symfony-assets-install": "relative"
+  },
+  "provide": {
+    "ext-mongo": "1.6.14"
+  }
+}

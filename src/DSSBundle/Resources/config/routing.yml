@@ -1,0 +1,3 @@
+dss_homepage:
+    path:     /
+    defaults: { _controller: DSSBundle:Default:index }

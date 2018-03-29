@@ -1,0 +1,13 @@
+https://api.tiqets.com/v2/docs/
+
+https://api.tiqets.com/v2/products
+
+username:token
+pass:HOQGWI54c2hoGOh1V8Zl2SmfE942rDpq
+
+api key: HOQGWI54c2hoGOh1V8Zl2SmfE942rDpq
+
+
+https://www.tiqets.com/affiliate/
+sergey@tripplannera.com
+Trippass11

@@ -1,0 +1,3 @@
+dss_home:
+    resource: "@DSSBundle/Resources/config/routing.yml"
+    prefix:   /home

@@ -1,0 +1,4 @@
+services:
+#    dss_home.example:
+#        class: DSSBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]
