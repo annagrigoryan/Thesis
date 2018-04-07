@@ -43,7 +43,8 @@
     "aws/aws-sdk-php": "~3.0",
     "khr/react-curl": "^2.0",
     "cubetools/react-settle-promise": "^0.1.0",
-    "clue/block-react": "1.2"
+    "clue/block-react": "1.2",
+    "elasticsearch/elasticsearch": "~6.0"
   },
   "require-dev": {
     "sensio/generator-bundle": "^3.0",
