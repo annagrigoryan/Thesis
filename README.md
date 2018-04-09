@@ -1,4 +1,3 @@
-# TripPlannera admin
 
 ### Install
 1.install php 7.0
