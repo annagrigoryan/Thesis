@@ -8,7 +8,7 @@ security:
                      memory:
                          users:
                              admin:
-                                 password: !1trippass123
+                                 password: auathesis
                                  roles: 'ROLE_ADMIN'
 
     firewalls:

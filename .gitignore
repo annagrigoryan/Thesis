@@ -24,8 +24,6 @@
 /web/media/plan-images/
 /web/media/profilepics/
 /web/uploads/
-/src/TripPlanneraBundle/Resources/public/vendor
-/src/TripPlanneraBundle/Resources/public/js/template/templates.js
 /node_modules/
 /web/blog/*
 web/sitemap*

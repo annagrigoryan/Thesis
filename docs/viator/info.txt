@@ -1,7 +1,0 @@
-Service Directory:  http://prelive.viatorapi.viator.com/service/directory
-KEY: 1725346122886505
-
-
-http://www.partner.viator.com/en/18485
-
-http://www.partner.viator.com/partner/home.jspa

@@ -1,4 +1,0 @@
-sergey@tripplannera.com
-pass: triprider11
-
-https://dev.locu.com/login/?next=/dashboard/

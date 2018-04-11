@@ -53,7 +53,7 @@ DirectoryIndex app.php
     RewriteCond %{REQUEST_FILENAME} -f
     RewriteRule .? - [L]
 
-    RewriteCond %{ENV:TRIPPLANNERA_ENV} =dev
+    RewriteCond %{ENV:DSS_ENV} =dev
     RewriteRule .? %{ENV:BASE}/app_dev.php [L]
 
     # Rewrite all other queries to the front controller.
