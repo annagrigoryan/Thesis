@@ -27,6 +27,7 @@ class AppKernel extends Kernel
             new Knp\Bundle\PaginatorBundle\KnpPaginatorBundle(),
             new DSSBundle\DSSBundle(),
             new Stof\DoctrineExtensionsBundle\StofDoctrineExtensionsBundle(),
+            new FOS\ElasticaBundle\FOSElasticaBundle(),
 
             new Liip\ImagineBundle\LiipImagineBundle(),
 
